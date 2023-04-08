@@ -519,10 +519,10 @@ module.exports = function (webpackEnv) {
                 }).concat({
                   loader: require.resolve('sass-loader'),
                   options: {
-                    sassOptions: {
-                      includePaths: [paths.appSrc + '/styles'],
-                    },
-                    additionalData: "@import 'utils';",
+                    // sassOptions: {
+                    //   includePaths: [paths.appSrc + '/styles'],
+                    // },
+                    // additionalData: "@import 'utils';",
                     sourceMap: isEnvProduction && shouldUseSourceMap,
                   }
                 }),
